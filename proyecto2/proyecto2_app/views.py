@@ -14,6 +14,9 @@ def Electronica(request):
             "foto3" : "electronica3.jpg"}
     return render(request, 'proyecto2_app/producto.html', data)
 
+def hola(request):
+    return render()
+
 def Ropa(request):
     data = {"titulo" : "Ropa",
             "producto1" : "Camisa",
