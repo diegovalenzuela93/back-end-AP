@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     return render(request, 'evaluacion1_app/index.html')
-
+    
 def consolas(request):
     data = {"tipo" : "consolas",
             "titulo" : "Consolas",
@@ -11,7 +11,7 @@ def consolas(request):
             "producto2" : "Xbox One",
             "producto3" : "Nintendo Switch",
             "foto1" : "play.jpg",
-            "foto2" : "xbox.png",
+            "foto2" : "xbox.jpg",
             "foto3" : "nintendo.jpg"}
     return render(request, 'evaluacion1_app/productos.html', data)
 
@@ -41,7 +41,7 @@ def descripcion_consolas(request, producto_id):
     data = {
         '1': {
             "nombre" : "PlayStation 5",
-            "descripcion" : "G502 X PLUS es la última adición a la legendaria gama G502. Reinventado con nuestros primerísimos interruptores híbridos LIGHTFORCE, tecnología inalámbrica LIGHTSPEED de nivel profesional, RGB LIGHTSYNC, sensor HERO 25K, etc. ",
+            "descripcion" : "Play Has No Limits ™. PlayStation®5. La consola PS5 ™ da rienda suelta a nuevas posibilidades de juego que nunca anticipaste. Experimenta una carga ultrarrápida con un SSD de velocidad ultrarrápida, una inmersión más profunda con soporte para retroalimentación háptica, activadores adaptativos y audio 3D, y una nueva generación de increíbles juegos de PlayStation®. Velocidad de la luz: Aprovecha la potencia de una CPU, GPU y SSD personalizadas con E / S integradas que reescriben las reglas de lo que puede hacer una consola PlayStation®. Juegos impresionantes: Maravíllate con los gráficos increíbles y experimenta las nuevas funciones de PS5 ™. Inmersión impresionante: Descubra una experiencia de juego más profunda con soporte para retroalimentación háptica, activadores adaptativos y tecnología de audio 3D.",
             "foto" : ""
         },
         '2' : {
@@ -86,7 +86,7 @@ def descripcion_accesorios(request, producto_id):
     data = {
         '1': {
             "nombre" : "Mouse Logitech G502X",
-            "descripcion" : "Play Has No Limits ™. PlayStation®5. La consola PS5 ™ da rienda suelta a nuevas posibilidades de juego que nunca anticipaste. Experimenta una carga ultrarrápida con un SSD de velocidad ultrarrápida, una inmersión más profunda con soporte para retroalimentación háptica, activadores adaptativos y audio 3D, y una nueva generación de increíbles juegos de PlayStation®. Velocidad de la luz: Aprovecha la potencia de una CPU, GPU y SSD personalizadas con E / S integradas que reescriben las reglas de lo que puede hacer una consola PlayStation®. Juegos impresionantes: Maravíllate con los gráficos increíbles y experimenta las nuevas funciones de PS5 ™. Inmersión impresionante: Descubra una experiencia de juego más profunda con soporte para retroalimentación háptica, activadores adaptativos y tecnología de audio 3D.",
+            "descripcion" : "G502 X PLUS es la última adición a la legendaria gama G502. Reinventado con nuestros primerísimos interruptores híbridos LIGHTFORCE, tecnología inalámbrica LIGHTSPEED de nivel profesional, RGB LIGHTSYNC, sensor HERO 25K, etc. ",
             "foto" : ""
         },
         '2' : {

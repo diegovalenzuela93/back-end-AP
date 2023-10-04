@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+    <title>Mi Tienda Online</title>
 </head>
 <body class="container mt-5">
     <div class="alert alert-dark text-center display-4">
-        <a href="#"><img src="{%static 'img/icon.png' %}" alt="index" width="100px"></a>GAMING SHOP</div>
+        <a href="/"><img class="me-3" src="{%static 'img/icon.jpg' %}" alt="index" width="100px"></a>GAMING STORE</div>
     <img src="{%static 'img/'%}{{perfil}}" alt="" width="150px">
-    <ul class="display-6">
+    <ul class="h5">
         <li>{{nombre}}</li>
         <li>{{rut}}</li>
         <li>{{direcc}}</li>
         <li>{{contacto}}</li>
         <li>{{correo}}</li>
     </ul>
-    <div class="col"><a href="/" class="btn btn-primary w-100 p-4">Volver</a></div>
+    <a href="/" class="btn btn-success mt-2"><i class="bi bi-reply-all"></i>VOLVER</a>
 
 </body>
 </html>

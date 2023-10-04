@@ -23,7 +23,6 @@ urlpatterns = [
     path('', views.index),
     path('consolas/', views.consolas),
     path('pcgamer/', views.pc),
-    path('descripcion/pc/<str:producto_id>', views.descripcion_pc),
     path('accesorios/', views.accesorios),
     path('descripcion/consolas/<str:producto_id>', views.descripcion_consolas),
     path('descripcion/pc/<str:producto_id>', views.descripcion_pc),

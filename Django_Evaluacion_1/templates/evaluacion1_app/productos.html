@@ -7,12 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+    <title>Mi Tienda Online</title>
 </head>
 <body class="container mt-5">
     <div class="alert alert-dark text-center display-4">
-        <a href="#"><img src="{%static 'img/icon.png' %}" alt="index" width="100px"></a>GAMING SHOP</div>
-    <div class="alert alert-danger display-5 fw-bold text-center">{{titulo}}</div>
+        <a href="/"><img class="me-3" src="{%static 'img/icon.jpg' %}" alt="index" width="100px"></a>GAMING STORE</div>
+    <div class="alert alert-danger display-6 fw-bold text-center">{{titulo}}</div>
     <div class="row">
         <div class="col"><a href="/descripcion/{{tipo}}/1" class="btn btn-info w-100"><img src="{%static 'img/'%}{{foto1}}" alt="" width="300px"><br>{{producto1}}</a></div>
         <div class="col"><a href="/descripcion/{{tipo}}/2" class="btn btn-info w-100"><img src="{%static 'img/'%}{{foto2}}" alt="" width="300px"><br>{{producto2}}</a></div>

@@ -1,0 +1,14 @@
+body{
+    background: url(../img/desktop-1920x1080.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.div1 {
+    background-color: black;
+    opacity: 50%;
+}
+
+p {
+    color: white;
+}
