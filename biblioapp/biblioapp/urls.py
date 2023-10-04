@@ -1,5 +1,5 @@
 """
-URL configuration for Django_Evaluacion_1 project.
+URL configuration for biblioapp project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,17 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from evaluacion1_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('consolas/', views.consolas),
-    path('pcgamer/', views.pc),
-    path('descripcion/pc/<str:producto_id>', views.descripcion_pc),
-    path('accesorios/', views.accesorios),
-    path('descripcion/consolas/<str:producto_id>', views.descripcion_consolas),
-    path('descripcion/pc/<str:producto_id>', views.descripcion_pc),
-    path('descripcion/accesorios/<str:producto_id>', views.descripcion_accesorios),
-    path('perfil/', views.usuario)
 ]

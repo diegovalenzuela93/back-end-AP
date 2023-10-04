@@ -12,13 +12,9 @@
 <body class="container mt-5">
     <div class="alert alert-dark text-center display-4">
         <a href="#"><img src="{%static 'img/icon.png' %}" alt="index" width="100px"></a>GAMING SHOP</div>
-    <div class="alert alert-danger display-5 fw-bold text-center">{{titulo}}</div>
-    <div class="row">
-        <div class="col"><a href="/descripcion/{{tipo}}/1" class="btn btn-info w-100"><img src="{%static 'img/'%}{{foto1}}" alt="" width="300px"><br>{{producto1}}</a></div>
-        <div class="col"><a href="/descripcion/{{tipo}}/2" class="btn btn-info w-100"><img src="{%static 'img/'%}{{foto2}}" alt="" width="300px"><br>{{producto2}}</a></div>
-        <div class="col"><a href="/descripcion/{{tipo}}/3" class="btn btn-info w-100"><img src="{%static 'img/'%}{{foto3}}" alt="" width="300px"><br>{{producto3}}</a></div>
+    <div class="display-5 fw-medium ">{{nombre}}</div>
+    <div class="row mt-4">
+        <div class="col">{{descripcion}}</a></div>
     </div>
-    <br>
-    <a href="/" class="btn btn-success"><i class="bi bi-reply-all"></i>VOLVER</a>
-</body>
+    <a href="/" class="mt-5 btn btn-success"><i class="bi bi-reply-all"></i>VOLVER</a>
 </html>
