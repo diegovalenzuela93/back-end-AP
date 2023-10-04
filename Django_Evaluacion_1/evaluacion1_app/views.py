@@ -105,7 +105,7 @@ def descripcion_accesorios(request, producto_id):
     return render(request, 'evaluacion1_app/descripcion.html', informacion_producto)
 
 def usuario(request):
-    data = {'perfil' : 'perfil.png',
+    data = {'perfil' : 'perfil2.png',
             'nombre' : 'Diego Valenzuela',
             'rut'   : '18484489-3',
             'direcc' : 'Calle Falsa 123',

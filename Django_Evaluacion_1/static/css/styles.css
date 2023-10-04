@@ -12,3 +12,11 @@ body{
 p {
     color: white;
 }
+
+#datos_perfil {
+    text-align: center;
+}
+    #datos_perfil ul li {
+        list-style: none;
+    }
+

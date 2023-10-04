@@ -13,14 +13,16 @@
 <body class="container mt-5">
     <div class="alert alert-dark text-center display-4">
         <a href="/"><img class="me-3" src="{%static 'img/icon.jpg' %}" alt="index" width="100px"></a>GAMING STORE</div>
-    <img src="{%static 'img/'%}{{perfil}}" alt="" width="150px">
-    <ul class="h5">
-        <li>{{nombre}}</li>
-        <li>{{rut}}</li>
-        <li>{{direcc}}</li>
-        <li>{{contacto}}</li>
-        <li>{{correo}}</li>
-    </ul>
+    <div id="datos_perfil">
+        <img class="mb-3" src="{%static 'img/'%}{{perfil}}" alt="" width="150px">
+        <ul class="h5 text-white">
+            <li>{{nombre}}</li>
+            <li>{{rut}}</li>
+            <li>{{direcc}}</li>
+            <li>{{contacto}}</li>
+            <li>{{correo}}</li>
+        </ul>
+    </div>
     <a href="/" class="btn btn-success mt-2"><i class="bi bi-reply-all"></i>VOLVER</a>
 
 </body>
