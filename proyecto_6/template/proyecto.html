@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <title>Lista</title>
+</head>
+<body class="container mt5">
+    <div class="alert alert-success display-1 text-center">
+        Listado
+    </div>
+    <div class="con"></div>
+
+{% if proyecto %}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha Inicio</th>
+                <th>Fecha Termino</th>
+                <th>Nombre</th>
+                <th>Responsable</th>
+                <th>Prioridad</th>
+                <th>-</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for x in proyecto %}
+            <tr>
+                <td>{{x.id}}</td>
+                <td>{{x.fechaInicio}}</td>
+                <td>{{x.fechaTermino}}</td>
+                <td>{{x.nombre}}</td>
+                <td>{{x.responsable}}</td>
+                <td>{{x.prioridad}}</td>
+                <td><a href="/eliminar/{{x.id}}" class="btn btn-danger btn-sm" ><i class="bi bi-trash3"></i></a>
+                    <a href="/modificar/{{x.id}}" class="btn btn-success btn-sm" ><i class="bi bi-pencil-square"></i></i></a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+
+<a href="/">
+    <div class="d-flex justify-content-end">
+        <a href="/registro/" class="btn btn-success">AGREGAR</a>
+        <a href="/" class="btn btn-secondary">VOLVER</a>
+    </div>
+</a>
+
+</body>
+</html>

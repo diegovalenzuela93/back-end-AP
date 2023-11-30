@@ -1,5 +1,5 @@
 """
-URL configuration for proyecto_4 project.
+URL configuration for reservas project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -15,13 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from proyecto_4_app import views
+from django.urls import path
+from reservas_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('empleados/', views.listaempleados),
     path('', views.index),
-    path('registro/', views.registro),
-    path('accounts/', include('django.contrib.auth.urls')),
+    path('reservas/', views.verReservas),
+    path('formulario/', views.formularioReserva),
+    path('eliminar/<int:id>', views.eliminarReserva),
+    path('actualizar/<int:id>', views.actualizarReserva),
 ]

@@ -9,36 +9,22 @@
 </head>
 <body class="container mt5">
     <div class="alert alert-success display-1 text-center">
-        Listado de empleados
+        Registro de empleados
     </div>
-    <div class="con"></div>
 
-{% if emple %}
-    <table class="table table-hover">
-        <thead>
+    <form method="POST" class="form-control">
+        <table class="table">
+            {{formss.as_table}}
             <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Email</th>
-                <th>Fono</th>
+                <td>
+                    <button type="submmit" class="btn btn-warning" value="GUARDAR">GUARDAR</button>
+                </td>
             </tr>
-        </thead>
-        <tbody>
-            {% for emp in emple %}
-            <tr>
-                <td>{{emp.id}}</td>
-                <td>{{emp.nombre}}</td>
-                <td>{{emp.email}}</td>
-                <td>{{emp.fono}}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-{% endif %}
+        </table>
+    </form>
 
-<a href="/">
-    <button class="btn btn-success">VOLVER</button>
-</a>
-
+    <a href="/">
+        <button class="btn btn-success">VOLVER</button>
+    </a>
 </body>
 </html>
