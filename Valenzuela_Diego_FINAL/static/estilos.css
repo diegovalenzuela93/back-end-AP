@@ -1,0 +1,7 @@
+body {
+    height: 100vh;
+    background: rgb(71,136,217);
+    background: linear-gradient(129deg, rgb(48, 23, 77) 0%, rgb(74, 16, 99) 100%);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
