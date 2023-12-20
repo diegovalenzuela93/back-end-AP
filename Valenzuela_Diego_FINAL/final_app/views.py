@@ -35,13 +35,23 @@ def instituciones(request):
     return render(request, 'institucion.html', data)
 
 
+def estudiante(request):
+    data = {
+        'id' : 1,
+        'Nombre' : 'Diego Valenzuela',
+        'Carrera' : 'Analista Programador',
+        'Email' : 'diego.valenzuela75@inacapmail.cl'
+    }
+    return JsonResponse(data)
+
+
 # Function Based Views
 @api_view(['GET'])
 def api(request):
     if request.method == 'GET':
         insti = models.instituciones.objects.all()
         serializer = InstitucionesSerializer(insti, many=True)
-        return JsonResponse({'instituciones': serializer.data}, safe=False)
+        return Response(serializer.data)
 
 
 # Class Based Views

@@ -26,4 +26,5 @@ urlpatterns = [
     path('api/instituciones/', views.api),
     path('lista-inscritos/', views.Inscritos_List_class.as_view()),
     path('lista-inscritos/<int:id>/', views.Inscritos_detalle_class.as_view()),
+    path('estudiante/', views.estudiante)
 ]
