@@ -23,7 +23,7 @@ urlpatterns = [
     path('', views.index),
     path('inscripciones/', views.inscripciones),
     path('institucion/', views.instituciones),
-    path('api/instituciones/', views.api),
+    path('api/instituciones/', views.listar_insituciones),
     path('lista-inscritos/', views.Inscritos_List_class.as_view()),
     path('lista-inscritos/<int:id>/', views.Inscritos_detalle_class.as_view()),
     path('estudiante/', views.estudiante)

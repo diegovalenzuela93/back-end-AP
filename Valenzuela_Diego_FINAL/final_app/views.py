@@ -47,7 +47,7 @@ def estudiante(request):
 
 # Function Based Views
 @api_view(['GET'])
-def api(request):
+def listar_insituciones(request):
     if request.method == 'GET':
         insti = models.instituciones.objects.all()
         serializer = InstitucionesSerializer(insti, many=True)
